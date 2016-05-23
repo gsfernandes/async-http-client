@@ -40,7 +40,7 @@ public abstract class ClosingNonKeepAliveConnectionsMustNotThrowExceptionsTest e
     }
 
     @Test
-    public void httpProxyToHttpTargetTest() throws IOException, InterruptedException, ExecutionException {
+    public void testConnectionCloseSsl() throws IOException, InterruptedException, ExecutionException {
         try (AsyncHttpClient client = getAsyncHttpClient(new AsyncHttpClientConfig.Builder().build())) {
             Request request = new RequestBuilder("GET").setUrl(getTargetUrl2()).build();
             Future<Response> responseFuture = client.executeRequest(request);

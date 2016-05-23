@@ -14,10 +14,10 @@ package com.ning.http.client.async.netty;
 
 import com.ning.http.client.AsyncHttpClient;
 import com.ning.http.client.AsyncHttpClientConfig;
-import com.ning.http.client.async.AuthTimeoutTest;
+import com.ning.http.client.async.ClosingNonKeepAliveConnectionsMustNotThrowExceptionsTest;
 import com.ning.http.client.async.ProviderUtil;
 
-public class NettyClosingNonKeepAliveConnectionsMustNotThrowExceptionsTest extends AuthTimeoutTest {
+public class NettyClosingNonKeepAliveConnectionsMustNotThrowExceptionsTest extends ClosingNonKeepAliveConnectionsMustNotThrowExceptionsTest {
 
     @Override
     public AsyncHttpClient getAsyncHttpClient(AsyncHttpClientConfig config) {
